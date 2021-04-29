@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title class="Titletext">
+Poverty and Education
+	</title>
+<script>
+  var i = 0; 
+  var images = [];
+  var time = 1000;
+
+  // Image List
+  images[0] = 'https://cdn.vox-cdn.com/thumbor/2kaJ6DduiaR4PPEy43e_k1m6-zg=/2x0:2037x1526/920x613/filters:focal(2x0:2037x1526):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/32950087/161214581.0.jpg';
+  images[1] = 'https://www.the74million.org/wp-content/uploads/2018/06/teacherstrike.jpg';
+  images[2] = 'https://static01.nyt.com/images/2018/04/03/us/03teachers-03/merlin_136298469_7c7f5071-c05c-4592-8ed9-414c426a6dfc-superJumbo.jpg?quality=90&auto=webp';
+  images[3] = 'https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F686810758%2F0x0.jpg%3Ffit%3Dscale';
+
+  // Change Image
+  function changeImg(){
+    document.slide.src = images[i];
+
+    if(i < images.length - 1){
+      i++;
+    } else {
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+  }
+
+  window.onload = changeImg;
+
+</script>
+</head>
+<header>
+ <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Poverty.html">Poverty</a>
+  <a class="active">Education</a>
+  <a href="Solutions.html">Solutions</a>
+</div>
+</header>
+<body class="mainbody">
+<h1 class="TitleInBody">
+Lack of Education; The Leading Cause of Severe Poverty in North America</h1>
+<div><p style="float: right;" class="figure1"><img name="slide" height="420px" width="650px" border="1px"></p>
+<p class="introprgrph">According to The United Nations, access to quality education is a human right. According to their research team, there has been a significant progress in improving education among unprivileged children worldwide. However, there is still approximately 260,000,000 children who were out of school in 2018. Furthermore, especially with current events regarding COVID-19, progress has been slowed greatly. However, To understand, and combat this issue, we must investigate it's cause. Perhaps the most significant cause of poor education is poor funding. In The US and Canada, a majority of Education spending comes from income tax. The higher the income tax in an area is, the higher the education funding will be. This causes a severe lopside in funding for Education in rich versus poor neighbourhoods.</p>
+</div>
+<h1>How Much of The Population in Canada is Struggling with Poverty?:</h1>
+<h3 class="alttext" ;>Protests Accross The US and Canada, Demanding Equity in Education</h3>
+<p style="float: left;" class="figure2ptag"><img src="https://i.imgur.com/RSmlu3U.png" width="650px"></p>
+<p style="float: right;" class="figure3ptag"><img src="https://i.imgur.com/pDvTLgf.png" width="660px"></p>
+<h1>Documetary on Education in The US and Canada:</h1>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/MBjrdHANZXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<style>
+.navbar {
+  background-color: #008080;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  color: #F5F5DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* I use the a: operator to change the colours here.*/
+.navbar a:hover {
+  background-color: #F5F5DC;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #964B00;
+  color: white;
+}
+.mainbody {
+  background-color: #ECEBC9;
+}
+.introprgrph {
+  display: block;
+  width: 720px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.figure1 {
+  display: inline-block;
+  float: right;
+  padding-right: 29px;
+  padding-bottom: 0px
+}
+.figure2 {
+  border: 3px solid #000000;
+  border-style: solid;
+  border-collapse: collapse;
+  float: right;
+  padding-right: 200px;
+}
+.Figure2 {
+
+}
+.alttext {
+  float: right;
+  padding-right: 118px;
+}
+.figure3ptag {
+  padding-right: 20px;
+}
+.FurtherResearch {
+  float: left;
+}
+</style>
+</html>

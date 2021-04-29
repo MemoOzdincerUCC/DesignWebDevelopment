@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title class="Titletext">
+Poverty and Education
+  </title>
+  <script type="text/javascript">
+    function fn1()
+    {
+      var select = document.getElementById("selectbox");
+      var selectedvalue = (select.options[select.selectedIndex].value);
+      if (selectedvalue == "USOffPov") {
+          var img = document.getElementById("StatsDynamic");
+         	 img.src="https://ei.marketwatch.com/Multimedia/2020/09/15/Photos/ZG/MW-IO517_povert_20200915121146_ZG.jpg?uuid=27470076-f76e-11ea-9a25-9c8e992d421e";
+		  	console.log(img.src);
+          	return false;
+      }
+        else if (selectedvalue == "CanadaOffPov") {
+        var img = document.getElementById("StatsDynamic");
+		  img.src="https://www.statcan.gc.ca/sites/default/files/topics-poverty-copl-2021-eng.jpg";
+		  return false;
+      } else {
+        var img = document.getElementById("StatsDynamic");
+		  img.src="https://ourworldindata.org/exports/share-of-population-living-in-extreme-poverty-by-world-region_v4_850x600.svg";
+		  return false;;
+      }
+    }
+
+</script>
+</head>
+<header>
+ <div class="navbar">
+  <a href="index.html">Home</a>
+  <a class="active">Poverty</a>
+  <a href="Education.html">Education</a>
+  <a href="Solutions.html">Solutions</a>
+</div>
+</header>
+<body class="mainbody">
+<p>
+<div>
+	<img src="https://i.imgur.com/I5WptKd.jpg" width="512" height="212" alt=""/ class="PovertyFigure1"></div>
+<h1 class="TitleInBody">
+	Poverty; The Ugly Truth</h1>
+</p>
+<div><p style="float: left;" class="figure1"><img src="https://i.imgur.com/b640MXV.png">
+</p>
+  <p class="introprgrph">Although Canada and The US are the richest countries in the world, they are also the countries with the highest class divide. Class divide comes in many forms. It segregates marginalized communities, minorities, lesser value neighbourhoods and uneducated groups. Unfortunately, especially in modern society, class divide has a compounding effect. Communities and groups who suffer from poor government support, such as Indigenous communities do not have the same opportunities to escape from the loop of poverty. This is caused by a plethora of social and political boundaries. Naturally, businesses, services, and other possible job opportunities are incentivized to establish near big cities, and rich neighbourhoods, making the job opportunities, and resources in marginalized communities significantly less. As for political, there is a major lopside to the education ministry, and how schools are funded, which will be discussed in the coming sections.</p>
+</div>
+		<h1 class="HMOTP1">How Much of The Population is Struggling with Poverty?:</h1>
+<em>Select A Statistic You Would Like To Display:</em>
+<select data-placeholder="Choose a Statistic..." id="selectbox" tabindex="1">
+<option value="NovalueSelected">Select a Statistic</option>
+<option value="CanadaOffPov" id="CanadaPovRate">Canada's Poverty Rate</option>
+<option value="USOffPov" id="USPovRate">The US' Poverty Gap</option>
+</select>
+<button type="button" onclick="fn1()">Go</button>
+	</body>
+<p style="float: right;"><img src="https://ourworldindata.org/exports/share-of-population-living-in-extreme-poverty-by-world-region_v4_850x600.svg" loading="lazy" style="width: 800px; height: 600px; border: 0px none;" id="StatsDynamic">
+	<h1 class="HMOTP">Analysis:</h1></p>
+<p class="introprgrph1">
+As can be seen in the three figures, overall poverty rate has gone down around the world. Yet, this does not lead to a less troubled population. This is due to poverty intensity. Poverty intensity depends partly on the difficulty of escaping poverty, and a key issue for the non-elderly is difficulty of finding jobs. In explaining the decline in U.S. poverty, U.S. Chancellor Rebecca Blank puts primary stress on the opportunities provided to the ones in need. As she notes: 'In times of high unemployment, it is disproportionately the less skilled who are unemployed, underemployed, working part time or out of the labour market, and it is these workers who benefit the most from an economic expansion' (2000, 7). The cause of this unemployment rate will be discussed in the "Education" portion of the website. It's also very important to note that the volume of poverty going down does solely dictate how poverous a country is. Canada's poverty rate, although went down since 1980, the people who are in poverty were put in increasingly severe situations, where escaping is near impossible. The deadly class divide, a bi-product of The Matthew Effect (the rich get richer), in a capitalist society.
+<!--<iframe src="https://data.worldbank.org/share/widget?end=2017&indicators=SI.POV.DDAY&locations=1W&start=1981&view=chart" width='800' height='533' frameBorder='0' scrolling="no" class="figure2"></iframe>-->
+<style>
+.navbar {
+  background-color: #008080;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  color: #F5F5DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* I use the a: operator to change the colours here.*/
+.navbar a:hover {
+  background-color: #F5F5DC;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #964B00;
+  color: white;
+}
+.mainbody {
+  background-color: #ECEBC9;
+}
+.introprgrph {
+  display: block;
+  width: 720px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.introprgrph1{
+  display: block;
+  width: 600px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.figure1 {
+  display: inline-block;
+  float: right;
+  padding-right: 29px;
+  padding-bottom: 0px
+}
+.figure2 {
+  border: 3px solid #000000;
+  border-style: solid;
+  border-collapse: collapse;
+  float: right;
+  padding-right: 200px;
+}
+.PovertyTable {
+  background-image: "https://carleton.ca/cspsc/wp-content/uploads/poverty-banner.png";
+}
+.PovertyTableText {
+  font-size: 45px;	
+  padding-right: 45px;
+}
+.EducationTableText {
+  font-size: 45px;	
+  padding-right: 45px;
+  color: aliceblue;
+}
+.Tabletableclass {
+  padding-left: 0px;
+  float: left;
+  padding-bottom: 20px;
+}
+.buttonforpoverty {
+  float: right;
+  padding: 15px;
+  padding-right: 20px;
+  background-color: darkslateblue;
+  color: aliceblue;
+}
+.PovertyFigure1 {
+  float: right;
+  padding-right: 150px;
+}
+#StatsDynamic {
+  float: right; 
+  padding-top: 0px;
+  padding-right: 0px;
+}
+.HMOTP {
+  padding-top: 0px;
+  float: left;
+  width:  600px;
+}
+.HMOTP1 {
+  padding-top: 0px;
+  float: right;
+  width:  600px;
+  padding-right: 180px;
+</style>
+
+</html>
